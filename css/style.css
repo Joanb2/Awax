@@ -1,6 +1,10 @@
+/** {
+	border: 1px solid #bbb;
+}*/
 body {
   padding: 0;
   margin: 0;
+  backround-color: #wh;
 }
 
 .container-fluid {
@@ -32,7 +36,7 @@ header {
   margin: 0;
 }
 
-.hero img {
+.hero .logo {
   display: inline;
   margin: 25px 25px 25px 200px;
 }
@@ -81,7 +85,7 @@ header {
   padding: 29px 0 30px 0;
   text-align: center;
   height: 18px;
-  color: #ffffff;
+  color: #fff;
   font-size: 24px;
   font-weight: 400;
   line-height: 18px;
@@ -102,8 +106,111 @@ header {
   border: none;
 }
 
-.hero .slogan img {
+.hero .slogan .dots {
   margin: 120px 620px 15px 620px;
+}
+
+.about {
+  padding: 55px;
+  position: relative;
+}
+
+.about img.phone {
+  position: absolute;
+  top: -35px;
+  right: 80px;
+  background-color: #b88b58;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.about h3 {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 30px;
+  margin-bottom: 45px;
+  color: #aeaeae;
+  color: #aeaeae;
+}
+
+.about .container {
+  padding: 0 0 50px 0;
+}
+
+.about .container p {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 25px;
+  color: #242424;
+  font-weight: 500;
+}
+
+.about .container button {
+  margin-top: 15px;
+  background-color: #b88b58;
+  width: 194px;
+  height: 45px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  border: none;
+}
+
+.about .container img {
+  width: 445px;
+  height: 275px;
+}
+
+.services {
+  padding: 55px;
+  height: 416px;
+  width: 100%;
+  background-color: #000;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
+
+.services h3 {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 30px;
+  margin-bottom: 45px;
+  color: #aeaeae;
+  margin-bottom: 55px;
+}
+
+.services .icon {
+  text-align: center;
+}
+
+.services .icon h4 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.services .icon p {
+  color: #7e7e7e;
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */
