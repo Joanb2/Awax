@@ -3,6 +3,11 @@ $bl: #000;
 $wh: #fff;
 $small_h: #aeaeae;
 
+@mixin reset_default {
+	padding: 0;
+	margin: 0;
+}
+
 @mixin header_styles {		
 	text-align: center;
 	font-size: 30px;
@@ -21,28 +26,29 @@ $small_h: #aeaeae;
 
 }
 
+[class*="col-"] {
+	@include reset_default;
+}
+
 /** {
 	border: 1px solid #bbb;
 }*/
 
 body {
-	padding: 0;
-	margin: 0;
+	@include reset_default;
 	backround-color: #wh;
 }
 
 .container-fluid {
 	width: 100%;
 	height: auto;
-	padding: 0;
-	margin: 0;
+	@include reset_default;
 }
 
 //Header styles
 
 header {
-	padding: 0;
-	margin: 0;
+	@include reset_default;
 }
 
 .hero {
@@ -57,8 +63,7 @@ header {
 		height: 100px;
 		width: 100%;
 		background-color: $bl;
-		padding: 0;
-		margin: 0;
+		@include reset_default;
 	}
 
 	.logo {
@@ -70,8 +75,7 @@ header {
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
-		margin: 0;
-		padding: 0;
+		@include reset_default;
 		height: 100px;
 		width: 70%;
 	}
@@ -211,6 +215,10 @@ header {
 
 	.icon {
 		text-align: center;
+		border-left: 2px solid #bebebe;
+		&:last-of-type {
+			border-right: 2px solid #bebebe;
+		}
 
 		h4 {
 			color: $wh;
@@ -225,3 +233,114 @@ header {
 		}
 	}
 }
+
+//Projects section 
+
+.projects {
+	padding: 55px;
+	height: 950px;
+	width: 100%;
+
+	h2 {
+		@include header_styles;
+	}
+
+	h3 {
+		@include small_header;
+	}
+
+	ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #ededed;
+		width: 710px;
+		height: 58px;
+		margin-left: 20%;
+		padding: 0;
+		text-align: center;
+		border-radius: 25px;
+		border: 1px solid #cfcfcf;
+
+		li {
+			display: inline-block;
+			padding: 0 22px;
+			font-size: 14px;
+			line-height: 52px;
+			text-transform: uppercase;
+			border-right: 1px solid #aeaeae;
+			&:last-of-type {
+				border-right: none;
+			}
+
+			&:hover {
+				border-bottom: 3px solid $accent_color;
+				cursor: pointer;
+			}
+		}
+
+	}
+
+	.portfolio {
+		margin: 0 auto;
+		width: 1080px;
+		padding-top: 23px;
+
+		.container, .row {
+			@include reset_default;
+		}
+
+		img {
+			padding: 15px;
+			position: relative;
+			z-index: -1;
+		}
+
+		.layer {
+			opacity: 0;
+			text-align: center;
+			color: $wh;
+			position: absolute;
+			width: 255px;
+			height: 165px;
+			left: 15px;
+			top: 15px;
+			z-index: 1;
+			background-color: rgba(0, 0, 0, .5);
+
+			&:hover {
+				opacity: 1;
+				transition: 1s;
+				cursor: pointer;
+			}
+
+			h4 {
+				margin-top: 60px;
+				text-transform: uppercase;
+				font-size: 18px;
+				font-weight: 400;
+			}
+
+			p {
+				font-size: 12px;
+				font-weight: 300;
+			}
+
+		}
+	}
+
+	button {
+		margin: 30px 43%;
+		padding: 10px 45px;
+		background-color: $accent_color;
+		border: none;
+		width: 194px;
+		border-radius: 25px;
+		color: $wh;
+		text-transform: uppercase;
+		font-size: 12px;
+		font-weight: 700;	
+	}
+}
+
+

@@ -1,3 +1,8 @@
+[class*="col-"] {
+  padding: 0;
+  margin: 0;
+}
+
 /** {
 	border: 1px solid #bbb;
 }*/
@@ -45,8 +50,8 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 0;
   padding: 0;
+  margin: 0;
   height: 100px;
   width: 70%;
 }
@@ -199,6 +204,11 @@ header {
 
 .services .icon {
   text-align: center;
+  border-left: 2px solid #bebebe;
+}
+
+.services .icon:last-of-type {
+  border-right: 2px solid #bebebe;
 }
 
 .services .icon h4 {
@@ -211,6 +221,122 @@ header {
 .services .icon p {
   color: #7e7e7e;
   font-size: 12px;
+}
+
+.projects {
+  padding: 55px;
+  height: 950px;
+  width: 100%;
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.projects h3 {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 30px;
+  margin-bottom: 45px;
+  color: #aeaeae;
+}
+
+.projects ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ededed;
+  width: 710px;
+  height: 58px;
+  margin-left: 20%;
+  padding: 0;
+  text-align: center;
+  border-radius: 25px;
+  border: 1px solid #cfcfcf;
+}
+
+.projects ul li {
+  display: inline-block;
+  padding: 0 22px;
+  font-size: 14px;
+  line-height: 52px;
+  text-transform: uppercase;
+  border-right: 1px solid #aeaeae;
+}
+
+.projects ul li:last-of-type {
+  border-right: none;
+}
+
+.projects ul li:hover {
+  border-bottom: 3px solid #b88b58;
+  cursor: pointer;
+}
+
+.projects .portfolio {
+  margin: 0 auto;
+  width: 1080px;
+  padding-top: 23px;
+}
+
+.projects .portfolio .container, .projects .portfolio .row {
+  padding: 0;
+  margin: 0;
+}
+
+.projects .portfolio img {
+  padding: 15px;
+  position: relative;
+  z-index: -1;
+}
+
+.projects .portfolio .layer {
+  opacity: 0;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  width: 255px;
+  height: 165px;
+  left: 15px;
+  top: 15px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.projects .portfolio .layer:hover {
+  opacity: 1;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.projects .portfolio .layer h4 {
+  margin-top: 60px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.projects .portfolio .layer p {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.projects button {
+  margin: 30px 43%;
+  padding: 10px 45px;
+  background-color: #b88b58;
+  border: none;
+  width: 194px;
+  border-radius: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */
