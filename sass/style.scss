@@ -343,4 +343,123 @@ header {
 	}
 }
 
+//Team section 
+
+.team {
+	width: 100%;
+	height: 700px;
+	background-image: url("../images/Bg_image.png");
+	margin-top: 55px;
+	padding: 55px;
+	object-fit: cover;
+
+	h2 {
+		@include header_styles;
+		color: $wh;
+	}
+
+	h3 {
+		@include small_header;
+	}
+
+	.person {
+		background-color: $wh;
+		width: 350px;
+		height: 432px;
+
+		img {
+			margin: 48px 83px;
+		}
+
+		h3 {
+			color: $bl;
+			font-size: 21px;
+			text-transform: uppercase;
+			font-weight: 400;
+			line-height: 21px;
+			margin-bottom: 15px;
+		}
+
+		p {
+			color: $bl;
+			font-size: 14px;
+			line-height: 24px;
+			font-weight: 300;
+			text-align: center;
+		}
+
+		.socials {
+			margin-top: 30px;
+			i {
+				font-size: 14px;
+				width: 33px;
+				height: 33px;
+				text-align: center;
+				padding: 8px;
+				border-radius: 50%;
+				color: $wh;
+				background-color: #bebebe;
+				margin-left: 11px;
+				&:hover {
+					background-color: $accent_color;
+					transition: .5s;
+			}
+		}
+		}
+
+	}
+	.dots {
+		margin: 34px 550px;	
+	}
+}
+
+//Clients section
+
+.clients {
+	padding: 55px;
+	background-color: #F7F7F7;
+
+	h2 {
+		@include header_styles;
+		color: $bl;
+		font-size: 24px;
+		font-weight: 700;
+	}
+
+	h3 {
+		@include small_header;
+	}
+
+	h4 {
+		text-align: center;
+		font-size: 24px;
+		line-height: 18px;
+		font-weight: 700;
+	}
+
+	p {
+		text-align: center;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 18px;
+	}
+
+	img {
+		margin: 77px 530px 30px 530px;
+	}
+
+	.quotes {
+		margin: 15px 600px;
+	}
+
+	.opinion {
+		margin-left: 250px;
+		width: 728px;
+		color: #7e7e7e;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 25px;
+	}
+}
+
 

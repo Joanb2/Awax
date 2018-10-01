@@ -339,4 +339,139 @@ header {
   font-weight: 700;
 }
 
+.team {
+  width: 100%;
+  height: 700px;
+  background-image: url("../images/Bg_image.png");
+  margin-top: 55px;
+  padding: 55px;
+  object-fit: cover;
+}
+
+.team h2 {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
+
+.team h3 {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 30px;
+  margin-bottom: 45px;
+  color: #aeaeae;
+}
+
+.team .person {
+  background-color: #fff;
+  width: 350px;
+  height: 432px;
+}
+
+.team .person img {
+  margin: 48px 83px;
+}
+
+.team .person h3 {
+  color: #000;
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 21px;
+  margin-bottom: 15px;
+}
+
+.team .person p {
+  color: #000;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.team .person .socials {
+  margin-top: 30px;
+}
+
+.team .person .socials i {
+  font-size: 14px;
+  width: 33px;
+  height: 33px;
+  text-align: center;
+  padding: 8px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #bebebe;
+  margin-left: 11px;
+}
+
+.team .person .socials i:hover {
+  background-color: #b88b58;
+  transition: .5s;
+}
+
+.team .dots {
+  margin: 34px 550px;
+}
+
+.clients {
+  padding: 55px;
+  background-color: #F7F7F7;
+}
+
+.clients h2 {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.clients h3 {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 30px;
+  margin-bottom: 45px;
+  color: #aeaeae;
+}
+
+.clients h4 {
+  text-align: center;
+  font-size: 24px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.clients p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.clients img {
+  margin: 77px 530px 30px 530px;
+}
+
+.clients .quotes {
+  margin: 15px 600px;
+}
+
+.clients .opinion {
+  margin-left: 250px;
+  width: 728px;
+  color: #7e7e7e;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
 /*# sourceMappingURL=style.css.map */
