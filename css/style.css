@@ -74,7 +74,6 @@ header {
 .hero .slogan {
   margin-top: 250px;
   align-self: center;
-  height: 480px;
 }
 
 .hero .slogan h1 {
@@ -98,7 +97,7 @@ header {
 }
 
 .hero .slogan button {
-  margin: 30px 560px;
+  margin: 20px 560px;
   width: 194px;
   height: 45px;
   background-color: #b88b58;
@@ -111,8 +110,8 @@ header {
   border: none;
 }
 
-.hero .slogan .dots {
-  margin: 120px 620px 15px 620px;
+.hero .dots img {
+  margin: 100px 45% 42px 45%;
 }
 
 .about {
@@ -142,8 +141,8 @@ header {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 30px;
-  margin-bottom: 45px;
   color: #aeaeae;
+  margin-bottom: 45px;
   color: #aeaeae;
 }
 
@@ -197,7 +196,6 @@ header {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 30px;
-  margin-bottom: 45px;
   color: #aeaeae;
   margin-bottom: 55px;
 }
@@ -242,8 +240,8 @@ header {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 30px;
-  margin-bottom: 45px;
   color: #aeaeae;
+  margin-bottom: 45px;
 }
 
 .projects ul {
@@ -362,8 +360,8 @@ header {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 30px;
-  margin-bottom: 45px;
   color: #aeaeae;
+  margin-bottom: 45px;
 }
 
 .team .person {
@@ -415,11 +413,12 @@ header {
 }
 
 .team .dots {
-  margin: 34px 550px;
+  display: block;
+  margin: 0 auto;
 }
 
 .clients {
-  padding: 55px;
+  padding-top: 55px;
   background-color: #F7F7F7;
 }
 
@@ -439,7 +438,6 @@ header {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 30px;
-  margin-bottom: 45px;
   color: #aeaeae;
 }
 
@@ -448,6 +446,7 @@ header {
   font-size: 24px;
   line-height: 18px;
   font-weight: 700;
+  margin-bottom: 14px;
 }
 
 .clients p {
@@ -455,23 +454,126 @@ header {
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
+  margin-bottom: 30px;
 }
 
 .clients img {
-  margin: 77px 530px 30px 530px;
+  display: block;
+  margin: 77px auto 29px auto;
 }
 
 .clients .quotes {
-  margin: 15px 600px;
+  display: block;
+  margin: 0 auto 18px auto;
 }
 
 .clients .opinion {
-  margin-left: 250px;
+  margin: 0 auto;
+  text-align: center;
   width: 728px;
   color: #7e7e7e;
   font-size: 14px;
   font-weight: 300;
   line-height: 25px;
+}
+
+.clients .dots {
+  margin: 0 auto;
+}
+
+.clients .logos {
+  background-color: #fff;
+  width: 100%;
+  border-top: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.clients .logos img {
+  margin: 45px auto 55px auto;
+}
+
+.prices {
+  padding: 55px;
+  height: 560px;
+  background-color: #ededed;
+}
+
+.prices h2 {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.prices h3 {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: #aeaeae;
+  margin-bottom: 0;
+}
+
+.prices .offers .offer {
+  margin-top: 45px;
+  background-color: #fff;
+  width: 255px;
+  height: 343px;
+  padding: 31px 65px 33px 68px;
+}
+
+.prices .offers .offer h4 {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.prices .offers .offer .price {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #7e7e7e;
+}
+
+.prices .offers .offer .price span {
+  font-size: 30px;
+  color: #000;
+  font-weight: 700;
+  line-height: 21px;
+  margin-top: 4px;
+}
+
+.prices .offers .offer .description {
+  margin-top: 23px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 13px;
+  color: #7e7e7e;
+  text-align: center;
+}
+
+.prices .offers .offer button {
+  margin: 17px auto 33px auto;
+  width: 129px;
+  height: 45px;
+  padding: 10px 38px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #373737;
+  color: #fff;
+  line-height: 18px;
+  border-radius: 25px;
+  border: none;
+}
+
+.prices .offers .offer button:hover {
+  background-color: #b88b58;
 }
 
 /*# sourceMappingURL=style.css.map */

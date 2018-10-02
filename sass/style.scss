@@ -21,7 +21,6 @@ $small_h: #aeaeae;
 	font-weight: 700;
 	text-transform: uppercase;
 	line-height: 30px;
-	margin-bottom: 45px;
 	color: $small_h;
 
 }
@@ -97,7 +96,6 @@ header {
 	.slogan {
 		margin-top: 250px;
 		align-self: center;
-		height: 480px;
 
 		h1 {
 			text-align: center;
@@ -120,7 +118,7 @@ header {
 		}
 
 		button {
-			margin: 30px 560px;
+			margin: 20px 560px;
 			width: 194px;
 			height: 45px;
 			background-color: $accent_color;
@@ -133,10 +131,12 @@ header {
 			border: none;
 		}
 
-		.dots {
-			margin: 120px 620px 15px 620px;
-		}
+	}
 
+	.dots {
+		img {
+			margin: 100px 45% 42px 45%;
+		}
 	}
 
 }
@@ -162,6 +162,7 @@ header {
 
 		h3 {
 			@include small_header;
+			margin-bottom: 45px;
 			color: $small_h;
 		}
 
@@ -247,6 +248,7 @@ header {
 
 	h3 {
 		@include small_header;
+		margin-bottom: 45px;
 	}
 
 	ul {
@@ -360,6 +362,7 @@ header {
 
 	h3 {
 		@include small_header;
+		margin-bottom: 45px;
 	}
 
 	.person {
@@ -403,20 +406,21 @@ header {
 				&:hover {
 					background-color: $accent_color;
 					transition: .5s;
+				}
 			}
-		}
 		}
 
 	}
 	.dots {
-		margin: 34px 550px;	
+		display: block;
+		margin: 0 auto;	
 	}
 }
 
 //Clients section
 
 .clients {
-	padding: 55px;
+	padding-top: 55px;
 	background-color: #F7F7F7;
 
 	h2 {
@@ -435,6 +439,7 @@ header {
 		font-size: 24px;
 		line-height: 18px;
 		font-weight: 700;
+		margin-bottom: 14px;
 	}
 
 	p {
@@ -442,24 +447,120 @@ header {
 		font-size: 18px;
 		font-weight: 400;
 		line-height: 18px;
+		margin-bottom: 30px;
 	}
 
 	img {
-		margin: 77px 530px 30px 530px;
+		display: block;
+		margin: 77px auto 29px auto;
 	}
 
 	.quotes {
-		margin: 15px 600px;
+		display: block;
+		margin: 0 auto 18px auto;
 	}
 
 	.opinion {
-		margin-left: 250px;
+		margin: 0 auto;
+		text-align: center;
 		width: 728px;
 		color: #7e7e7e;
 		font-size: 14px;
 		font-weight: 300;
 		line-height: 25px;
 	}
+
+	.dots {
+		margin: 0 auto;
+	}
+
+	.logos {
+		background-color: $wh;
+		width: 100%;
+		border-top: 1px solid #cfcfcf;
+		border-bottom: 1px solid #cfcfcf;
+
+		img {
+			margin: 45px auto 55px auto;
+		}
+	}
 }
 
+//Prices section
+.prices {
+	padding: 55px;
+	height: 560px;
+	background-color: #ededed;
 
+	h2 {
+		@include header_styles;
+	}
+
+	h3 {
+		@include small_header;
+		margin-bottom: 0;
+	}
+
+	.offers {
+		.offer {
+			margin-top: 45px;
+			background-color: $wh;
+			width: 255px;
+			height: 343px;
+			padding: 31px 65px 33px 68px;
+
+			h4 {
+				font-size: 14px;
+				text-align: center;
+				font-weight: 400;
+				line-height: 21px;
+				text-transform: uppercase;
+			}
+
+			.price {
+				font-size: 10px;
+				font-weight: 400;
+				line-height: 13px;
+				text-align: center;
+				text-transform: uppercase;
+				color: #7e7e7e;
+
+				span {
+					font-size: 30px;
+					color: $bl;
+					font-weight: 700;
+					line-height: 21px;
+					margin-top: 4px;
+				}
+			}
+
+			.description {
+				margin-top: 23px;
+				font-size: 10px;
+				font-weight: 400;
+				line-height: 13px;
+				color: #7e7e7e;
+				text-align: center;
+			}
+
+			button {
+					margin: 17px auto 33px auto;
+					width: 129px;
+					height: 45px;
+					padding: 10px 38px;
+					font-size: 12px;
+					font-weight: 700;
+					text-transform: uppercase;
+					background-color: #373737;
+					color: $wh;
+					line-height: 18px;
+					border-radius: 25px;
+					border: none;
+					&:hover {
+						background-color: $accent_color;
+					}
+
+			}
+		}
+	}
+}
