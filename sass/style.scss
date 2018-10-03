@@ -25,6 +25,20 @@ $small_h: #aeaeae;
 
 }
 
+@mixin button_styles {
+	display: block;
+	margin: 0 auto;
+	color: $wh;
+	background-color: $accent_color;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 700;
+	width: 194px;
+	height: 45px;
+	border: none;
+	border-radius: 25px;
+}
+
 [class*="col-"] {
 	@include reset_default;
 }
@@ -118,25 +132,15 @@ header {
 		}
 
 		button {
-			margin: 20px 560px;
-			width: 194px;
-			height: 45px;
-			background-color: $accent_color;
-			color: $wh;
-			font-size: 14px;
-			text-transform: uppercase;
-			font-weight: 700;
-			border-radius: 25px;
-			line-height: 18px;
-			border: none;
+			margin: 67px auto 0 auto;
+			@include button_styles;
 		}
 
 	}
 
 	.dots {
-		img {
-			margin: 100px 45% 42px 45%;
-		}
+		display: block;
+		margin: 125px auto 43px auto;
 	}
 
 }
@@ -179,14 +183,7 @@ header {
 
 			button {
 				margin-top: 15px;
-				background-color: $accent_color;
-				width: 194px;
-				height: 45px;
-				color: $wh;
-				font-size: 14px;
-				border-radius: 25px;
-				text-transform: uppercase;
-				border: none;
+				@include button_styles;
 			}
 
 			img {
@@ -332,16 +329,8 @@ header {
 	}
 
 	button {
-		margin: 30px 43%;
-		padding: 10px 45px;
-		background-color: $accent_color;
-		border: none;
-		width: 194px;
-		border-radius: 25px;
-		color: $wh;
-		text-transform: uppercase;
-		font-size: 12px;
-		font-weight: 700;	
+		margin: 30px auto;
+		@include button_styles;
 	}
 }
 
@@ -413,7 +402,7 @@ header {
 	}
 	.dots {
 		display: block;
-		margin: 0 auto;	
+		margin: 53px auto 43px auto;
 	}
 }
 
@@ -471,7 +460,8 @@ header {
 	}
 
 	.dots {
-		margin: 0 auto;
+		display: block;
+		margin: 51px auto 41px auto;
 	}
 
 	.logos {
@@ -562,5 +552,177 @@ header {
 
 			}
 		}
+	}
+}
+
+//Premium section
+
+.premium {
+	width: 100%;
+	height: 757px;
+	background-color: $wh;
+	padding: 55px;
+
+	h2 {
+		@include header_styles;
+	}
+
+	h3 {
+		@include small_header;
+	}
+
+	.features {
+		margin: 36px auto 27px auto;
+		h4 {
+			font-size: 21px;
+			text-transform: uppercase;
+			font-weight: 700;
+			color: #242424;
+			display: inline;
+			margin-left: 30px;
+		}
+
+		p {
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 25px;
+			margin-left: 68px;
+			margin-bottom: 32px;
+			&:first-of-type {
+				margin-bottom: 42px;
+			}
+		}
+	}
+
+	.dots {
+		display: block;
+		margin: 0 auto;
+	}
+
+	button {
+		@include button_styles;
+		margin: 40px auto 43px auto;
+	}
+}
+
+//Some facts section
+
+.facts 	{
+	padding-top: 55px;
+	background-color: $bl;
+	height: 492px;
+	text-align: center;
+
+	h2 {
+		@include header_styles;
+	}
+
+	h3 {
+		@include small_header;
+		margin-bottom: 0;
+	}
+
+	.details {
+		height: 230px;
+		margin-top: 51px;
+
+		.detail {
+			position: relative;
+			height: 154px;
+			margin: 30px auto 0 auto;
+			h4 {
+				font-size: 48px;
+				font-weight: 700;
+				color: $accent_color;
+				line-height: 28px;
+			}
+
+			h5 {
+				font-size: 18px;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: $wh;
+				margin-bottom: 22px;
+			}
+
+			p {
+				position: absolute;
+				font-size: 12px;
+				color: #7e7e7e;
+				line-height: 21px;
+				font-weight: 300;
+				margin: 0;
+				top: 110px;
+				bottom: 0;
+			}
+		}
+	}
+
+	.socials {
+		height: 82px;
+		padding: 21px;
+		font-size: 10px;
+		font-weight: 700;
+		background-color: $wh;
+		color: #aeaeae;
+
+		img {
+			display: inline;
+			margin-right: 15px;
+		}
+
+		p {
+			display: inline;
+			font-size: 14px;
+			text-transform: uppercase;
+			margin-right: 63px;
+		}
+
+		i {
+			width: 33px;
+			height: 33px;
+			border-radius: 50%;
+			color: $wh;
+			margin: 0 5px 0 36px;
+			padding: 8px;
+			font-size: 15px;
+			font-weight: 400;
+
+			&.fa-twitter {
+				background-color: #34c5f0;
+			}
+
+			&.fa-linkedin-in {
+				background-color: #127cb4;
+			}
+
+			&.fa-facebook-f {
+				background-color: #336297;
+			}
+
+			&.fa-google-plus-g {
+				background-color: #e74237;
+			}
+
+			&.fa-pinterest-p {
+				background-color: #b71c29;
+			}
+		}
+	}
+}
+
+//Contact section
+
+.contact {
+	padding-top: 55px;
+	background-color: #f7f7f7;
+	height: 625px;
+
+	h2 {
+		@include header_styles;
+	}
+
+	h3 {
+		@include small_header;
 	}
 }
