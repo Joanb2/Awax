@@ -716,7 +716,7 @@ header {
 .contact {
 	padding-top: 55px;
 	background-color: #f7f7f7;
-	height: 625px;
+	height: 1068px;
 
 	h2 {
 		@include header_styles;
@@ -724,5 +724,159 @@ header {
 
 	h3 {
 		@include small_header;
+	}
+
+	form {
+		display: block;
+		margin: 93px auto 0 auto;
+		width: 570px;
+
+		.form-group {
+			@include reset_default;
+		}
+
+		.col-lg-5 {
+			margin-right: 45px;
+		}
+
+		input {
+			background-color: inherit;
+			font-size: 13px;
+			font-weight: 300;
+			line-height: 25px;
+			text-transform: uppercase;
+			color: #9e9e9e;
+			padding: 15px 0;
+			border: none;
+			border-bottom: 2px solid #a4a4a4;
+			outline-style: none;
+			margin-bottom: 46px;
+
+			&.personal {
+				width: 255px;
+			}
+
+			&.topic {
+				width: 540px;
+			}
+		}
+	}
+
+	button {
+		@include button_styles;
+		margin-bottom: 76px;
+	}
+
+	.map {
+		background-image: url("../images/Map.png");
+		background-position: center;
+		object-fit: cover;
+		height: 416px;
+		position: relative;
+
+		.info {
+			background-color: $wh;
+			width: 540px;
+			height: 343px;
+			padding: 67px 122px 76px 40px;
+			position: absolute;
+			top: 36px;
+			left: 60px;
+
+
+			p {
+				display: block;
+				font-size: 12px;
+				font-weight: 300;
+				line-height: 24px;
+				color: #7e7e7e;
+
+				i {
+					width: 35px;
+					height: 35px;
+					background-color: #aeaeae;
+					color: $wh;
+					border-radius: 50%;
+					padding: 8px;
+					font-size: 18px;
+					font-weight: 600;
+					text-align: center;
+					margin-right: 17px;
+				}
+			}
+		}
+	}
+}
+
+// Footer
+
+footer {
+	height: 265px;
+	background-color: $bl;
+	padding: 33px;
+
+	.container {
+		width: 80%;
+	}
+
+	.social_links {
+		height: 181px;
+
+		i {
+			width: 33px;
+			height: 33px;
+			background-color: #373737;
+			color: $wh;
+			border-radius: 50%;
+			text-align: center;
+			padding: 8px;
+
+			&:hover {
+				background-color: $accent_color;
+			}
+		}
+
+		.copyright {
+			font-size: 14px;
+			text-transform: uppercase;
+			color: $wh;
+			height: 11px;
+			margin-top: 140px;
+		}
+
+	}
+
+	.text {
+			font-size: 12px;
+			color: #7e7e7e;
+			font-weight: 300;
+			line-height: 21px;
+			padding: 0 15px;
+	}
+
+.subscribe {
+	text-align: center;
+	margin-left: 15px;
+	width: 350px;
+	height: 198px;
+	background-color: #373737;
+
+		input {
+			margin-top: 51px;
+			padding: 15px 0;
+			background-color: inherit;
+			outline-style: none;
+			line-height: 24px;
+			border: none;
+			border-bottom: 2px solid #aeaeae;
+			color: #9e9e9e;
+			font-size: 13px;
+			text-transform: uppercase;
+		}
+
+		button {
+			@include button_styles;
+			margin-top: 28px;
+		}
 	}
 }
