@@ -151,12 +151,18 @@ header {
 	padding: 55px;
 	position: relative;
 
-		img.phone {
+		.fa-phone {
 			position: absolute;
+			width: 65px;
+			height: 65px;
 			top: -35px;
 			right: 80px;
+			font-size: 35px;
+			text-align: center;
+			padding: 5px;
+			color: $wh;
 			background-color: $accent_color;
-			padding: 15px;
+			padding: 10px;
 			border-radius: 50%;
 		}
 
@@ -249,13 +255,11 @@ header {
 	}
 
 	ul {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		display: block;
+		margin: 0 auto;
 		background-color: #ededed;
 		width: 710px;
 		height: 58px;
-		margin-left: 20%;
 		padding: 0;
 		text-align: center;
 		border-radius: 25px;
@@ -340,6 +344,8 @@ header {
 	width: 100%;
 	height: 700px;
 	background-image: url("../images/Bg_image.png");
+	background-position: center;
+	background-repeat: no-repeat;
 	margin-top: 55px;
 	padding: 55px;
 	object-fit: cover;
@@ -630,6 +636,7 @@ header {
 			position: relative;
 			height: 154px;
 			margin: 30px auto 0 auto;
+
 			h4 {
 				font-size: 48px;
 				font-weight: 700;
@@ -878,5 +885,158 @@ footer {
 			@include button_styles;
 			margin-top: 28px;
 		}
+	}
+}
+
+@media(min-width: 992px) and (max-width: 1190px) {
+
+	.hero {
+		.logo {
+			margin-left: 0;
+		}
+
+		nav {
+			li {
+				line-height: 15px;
+				text-align: center;
+			}
+		}
+	}
+
+	.about  {
+		height: auto;
+
+	}
+
+	.services {
+		height: auto;
+	}
+
+	.projects {
+		height: auto;
+	}
+
+	.team {
+		height: auto;
+	}
+
+	.clients {
+		height: auto;
+	}
+
+	.prices {
+		height: auto;
+	}
+
+	.premium {
+		height: auto;
+	}
+
+	.facts {
+		height: auto;
+
+		.details {
+			height: auto;
+		}
+	}
+
+	.contact {
+		height: auto;
+	}
+
+	footer {
+		height: auto;
+	}
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+	.about  {
+		height: auto;
+	}
+
+	.services {
+		height: auto;
+	}
+
+	.projects {
+		height: auto;
+	}
+
+	.team {
+		height: auto;
+	}
+
+	.clients {
+		height: auto;
+	}
+
+	.prices {
+		height: auto;
+	}
+
+	.premium {
+		height: auto;
+	}
+
+	.facts {
+		height: auto;
+
+		.details {
+			height: auto;
+		}
+	}
+
+	.contact {
+		height: auto;
+	}
+
+	footer {
+		height: auto;
+	}
+}
+
+@media(max-width: 767px) {
+	.about  {
+		height: auto;
+	}
+
+	.services {
+		height: auto;
+	}
+
+	.projects {
+		height: auto;
+	}
+
+	.team {
+		height: auto;
+	}
+
+	.clients {
+		height: auto;
+	}
+
+	.prices {
+		height: auto;
+	}
+
+	.premium {
+		height: auto;
+	}
+
+	.facts {
+		height: auto;
+
+		.details {
+			height: auto;
+		}
+	}
+
+	.contact {
+		height: auto;
+	}
+
+	footer {
+		height: auto;
 	}
 }
