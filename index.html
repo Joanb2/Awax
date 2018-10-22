@@ -13,20 +13,18 @@
 	<header>
 		<div class="container-fluid">
 			<div class="hero">
-				<nav class="nav">
-					<div>
-						<img class="logo" src="images/Logo.png" alt="logo">
-					</div>
-					<ul>
-						<li>home</li>
-						<li>about us</li>
-						<li>services</li>
-						<li>our projects</li>
-						<li>our team</li>
-						<li>happy clients</li>
-						<li>price</li>
-						<li>some facts</li>
-						<li>contact us</li>
+				<nav class="main_menu">
+					<img class="logo" src="images/Logo.png" alt="logo">
+					<label for="toggle_nav">&#9776;</label>
+					<input type="checkbox" id="toggle_nav">
+					<ul class="menu_hide">
+						<li>Home</li>
+						<li>About us</li>
+						<li>Services</li>
+						<li>Our projects</li>
+						<li>Our team</li>
+						<li>Some facts</li>
+						<li>Contact us</li>
 					</ul>
 				</nav>
 				<div class="slogan">
@@ -45,12 +43,12 @@
 			<h3>Who we are?</h3>
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-7 col-md-12">
+					<div class="col-lg-7 col-md-12 col-sm-12">
 						<p>Praesent metus urna, feugiat a placerat vel, elementum at leo. Quisque vel fermentum ipsum. Nulla at facilisis est, vel condimentum ligula. Mauris volutpat vitae risus sed pellentesque. Praesent fermentum neque ac tellus gravida, at varius sem accumsan. Nam porta erat id sapien consectetur. Fusce sed purus eros. Vivamus rhoncus, ipsum in tempus fermentum, orci leo facilisis purus. Nam porta erat id sapien consectetur. Fusce sed purus eros. Vivamus rhoncus, ipsum in tempus fermentum, orci leo facilisis purus.</p>
 						<button>Learn more</button>
 					</div>
-					<div class="col-lg-5 col-md-12">
-						<img src="/images/Video.png" alt="video">
+					<div class="col-lg-5 col-md-12 col-sm-12">
+						<img src="/images/Video.png" alt="video" class="video">
 					</div>
 				</div>
 			</div>
@@ -69,7 +67,7 @@
 					</div>
 					<div class="col-lg-3 col-md-6 icon">
 						<img src="/images/Star.png" alt="star">
-						<h4>Modern design</h4>
+						<h4 class="modern">Modern design</h4>
 						<P>Praesent metus urna, feugiata placerat elementum</P>
 					</div>
 					<div class="col-lg-3 col-md-6 icon">
@@ -90,104 +88,132 @@
 		<div class="container-fluid">
 			<h2>Our projects</h2>
 			<h3>What we create</h3>
-			<ul>
-				<li>All</li>
-				<li>Photos</li>
-				<li>Branding</li>
-				<li>Adverts</li>
-				<li>Development</li>
-				<li>Misc</li>
-			</ul>
+			<div class="nav">
+				<label for="toggle">&#9776;</label>
+				<input type="checkbox" id="toggle">
+				<ul class="menu">
+					<li>All</li>
+					<li>Photos</li>
+					<li>Branding</li>
+					<li>Adverts</li>
+					<li>Development</li>
+					<li>Misc</li>
+				</ul>
+			</div>
 			<div class="portfolio">
-				<div class="container">
+				<div class="container-fluid">
 					<div class="row">
-						<div class="col-lg-3 col-md-6 col-sm-6">
-							<div class="layer">
-								<h4>About</h4>
-								<p>Praesent metus urna, feugiata<br>placerat elementum at leo</p>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="photo">
+								<div class="layer">
+									<h4>About</h4>
+									<p>Praesent metus urna, feugiata<br>placerat elementum at leo</p>
+								</div>
+								<img src="/images/Img1.png" alt="img1">
 							</div>
-							<img src="/images/Img1.png" alt="img1">
 						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6">
-							<div class="layer">
-								<h4>About</h4>
-								<p>Praesent metus urna, feugiata<br>placerat elementum at leo</p>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="photo">
+								<div class="layer">
+									<h4>About</h4>
+									<p>Praesent metus urna, feugiata<br>placerat elementum at leo</p>
+								</div>
+								<img src="/images/Img2.jpg" alt="img2">
 							</div>
-							<img src="/images/Img2.jpg" alt="img2">
 						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6">
-							<div class="layer">
-								<h4>About</h4>
-								<p>Praesent metus urna, feugiata<br>placerat elementum at leo</p>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="photo">
+								<div class="layer">
+									<h4>About</h4>
+									<p>Praesent metus urna, feugiata<br>placerat elementum at leo</p>
+								</div>
+								<img src="/images/Img3.png" alt="img3">
 							</div>
-							<img src="/images/Img3.png" alt="img3">
 						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6">
-							<div class="layer">
-								<h4>About</h4>
-								<p>Praesent metus urna, feugiata<br>placerat elementum at leo</p>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="photo">
+								<div class="layer">
+									<h4>About</h4>
+									<p>Praesent metus urna, feugiata<br>placerat elementum at leo</p>
+								</div>
+								<img src="/images/Img4.png" alt="img4">
 							</div>
-							<img src="/images/Img4.png" alt="img4">
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-lg-3 col-md-6 col-sm-6">
-							<div class="layer">
-								<h4>About</h4>
-								<p>Praesent metus urna, feugiata<br>placerat elementum at leo</p>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="photo">
+								<div class="layer">
+									<h4>About</h4>
+									<p>Praesent metus urna, feugiata<br>placerat elementum at leo</p>
+								</div>
+								<img src="/images/Img5.png" alt="img5">
 							</div>
-							<img src="/images/Img5.png" alt="img5">
 						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6">
-							<div class="layer">
-								<h4>About</h4>
-								<p>Praesent metus urna, feugiata<br>placerat elementum at leo</p>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="photo">
+								<div class="layer">
+									<h4>About</h4>
+									<p>Praesent metus urna, feugiata<br>placerat elementum at leo</p>
+								</div>
+								<img src="/images/Img6.png" alt="img6">
 							</div>
-							<img src="/images/Img6.png" alt="img6">
 						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6">
-							<div class="layer">
-								<h4>About</h4>
-								<p>Praesent metus urna, feugiata<br>placerat elementum at leo</p>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="photo">
+								<div class="layer">
+									<h4>About</h4>
+									<p>Praesent metus urna, feugiata<br>placerat elementum at leo</p>
+								</div>
+								<img src="/images/Img7.png" alt="img7">
 							</div>
-							<img src="/images/Img7.png" alt="img7">
 						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6">
-							<div class="layer">
-								<h4>About</h4>
-								<p>Praesent metus urna, feugiata<br>placerat elementum at leo</p>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="photo">
+								<div class="layer">
+									<h4>About</h4>
+									<p>Praesent metus urna, feugiata<br>placerat elementum at leo</p>
+								</div>
+								<img src="/images/Img8.png" alt="img8">
 							</div>
-							<img src="/images/Img8.png" alt="img8">
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-lg-3 col-md-6 col-sm-6">
-							<div class="layer">
-								<h4>About</h4>
-								<p>Praesent metus urna, feugiata<br>placerat elementum at leo</p>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="photo">
+								<div class="layer">
+									<h4>About</h4>
+									<p>Praesent metus urna, feugiata<br>placerat elementum at leo</p>
+								</div>
+								<img src="/images/Img9.png" alt="img9">
 							</div>
-							<img src="/images/Img9.png" alt="img9">
 						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6">
-							<div class="layer">
-								<h4>About</h4>
-								<p>Praesent metus urna, feugiata<br>placerat elementum at leo</p>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="photo">
+								<div class="layer">
+									<h4>About</h4>
+									<p>Praesent metus urna, feugiata<br>placerat elementum at leo</p>
+								</div>
+								<img src="/images/Img10.png" alt="img10">
 							</div>
-							<img src="/images/Img10.png" alt="img10">
 						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6">
-							<div class="layer">
-								<h4>About</h4>
-								<p>Praesent metus urna, feugiata<br>placerat elementum at leo</p>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="photo">
+								<div class="layer">
+									<h4>About</h4>
+									<p>Praesent metus urna, feugiata<br>placerat elementum at leo</p>
+								</div>
+								<img src="/images/Img11.png" alt="img11">
 							</div>
-							<img src="/images/Img11.png" alt="img11">
 						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6">
-							<div class="layer">
-								<h4>About</h4>
-								<p>Praesent metus urna, feugiata<br>placerat elementum at leo</p>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="photo">
+								<div class="layer">
+									<h4>About</h4>
+									<p>Praesent metus urna, feugiata<br>placerat elementum at leo</p>
+								</div>
+								<img src="/images/Img12.png" alt="img12">
 							</div>
-							<img src="/images/Img12.png" alt="img12">
 						</div>
 					</div>
 				</div>
@@ -199,9 +225,9 @@
 		<div class="container-fluid">
 			<h2>Our team</h2>
 			<h3>Our co-workers</h3>
-			<div class="container">
+			<div class="container workers">
 				<div class="row">
-					<div class="col-lg-4 col-md-12">
+					<div class="col-lg-4 col-md-4 col-sm-12">
 						<div class="person">
 							<img src="/images/Img_team_1.png" alt="person1">
 							<h3>Jane Doe</h3>
@@ -217,7 +243,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-12">
+					<div class="col-lg-4 col-md-4 col-sm-12">
 						<div class="person">
 							<img src="/images/Img_team_2.png" alt="person2">
 							<h3>Mike Shiller</h3>
@@ -233,7 +259,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-12">
+					<div class="col-lg-4 col-md-4 col-sm-12">
 						<div class="person">
 							<img src="/images/Img_team_3.png" alt="person3">
 							<h3>Anna Johns</h3>
@@ -295,7 +321,7 @@
 			<h2>Price</h2>
 			<h3>Pricing table</h3>
 			<div class="offers">
-				<div class="container">
+				<div class="container-fluid">
 					<div class="row">
 						<div class="col-lg-3 col-md-6 col-sm-12">
 							<div class="offer">
@@ -363,32 +389,38 @@
 			<h2>Premium</h2>
 			<h3>Even More Features Available</h3>
 			<div class="features">
-				<div class="container">
+				<div class="container-fluid">
 					<div class="row">
 						<div class="col-lg-5 col-md-12 col-sm-12">
-							<img src="/images/Img.png">
+							<img src="/images/Img.png" alt="package" class="packages">
 						</div>
 						<div class="col-lg-6 col-md-12 col-sm-12">
-							<div>
-								<img src="/images/icon.png">
-								<h4>First Feature</h4>
-								<p>Praesent metus urna, feugiat a placerat vel, elementum at leo.<br>
-								 Quisque vel fermentum ipsum.
-								 Nulla at facilisis est.<br>
-								 — FEATURE ONE<br>
-								 — FEATURE TWO<br>
-	    						 — FEATURE THREE</p>
-	    					</div>
-	    					<div>
-								<img src="/images/icon.png">
-								<h4>Second Feature</h4>
-								<p>Praesent metus urna, feugiat a placerat vel.</p>
-	    					</div>
-	    					<div>
-								<img src="/images/icon.png">
-								<h4>Third Feature</h4>
-								<p>Praesent metus urna, feugiat a placerat vel, elementum at leo.</p>
-	    					</div>
+							<div class="wrapper">
+								<img src="/images/icon.png" alt="check">
+								<div class="feature">
+									<h4>First Feature</h4>
+									<p>Praesent metus urna, feugiat a placerat vel, elementum at leo.<br>
+									 Quisque vel fermentum ipsum.
+									 Nulla at facilisis est.<br>
+									 — FEATURE ONE<br>
+									 — FEATURE TWO<br>
+		    						 — FEATURE THREE</p>
+		    					</div>
+		    				</div>
+	    					<div class="wrapper">
+								<img src="/images/icon.png" alt="check">
+								<div class="feature">
+									<h4>Second Feature</h4>
+									<p>Praesent metus urna, feugiat a placerat vel.</p>
+								</div>	
+							</div>
+							<div class="wrapper">	
+								<img src="/images/icon.png" alt="check">
+								<div class="feature">
+									<h4>Third Feature</h4>
+									<p>Praesent metus urna, feugiat a placerat vel, elementum at leo.</p>
+		    					</div>
+		    				</div>
 						</div>
 					</div>
 				</div>
@@ -442,20 +474,20 @@
 			<h3>our agency located in Melbourne, Australia</h3>
 			<form>
 				<div class="form-group row">
-					<div class="col-lg-5">
+					<div class="col-lg-5 col-md-12 col-sm-12">
 						<input type="text" value="Name" class="personal">
 					</div>
-					<div class="col-lg-5">
+					<div class="col-lg-5 col-md-12 col-sm-12">
 						<input type="text" value="Email" class="personal">
 					</div>
-				</div>
+				</div> 
 				<div class="form-group row">
-					<div class="col-lg-11">
+					<div class="col-lg-11 col-md-12 col-sm-12">
 						<input type="text" value="Subject" class="topic">
 					</div>
 				</div>
 				<div class="form-group row">
-					<div class="col-lg-11">
+					<div class="col-lg-11 col-md-12 col-sm-12">
 						<input type="text" value="Message" class="topic">
 					</div>
 				</div>
@@ -499,5 +531,6 @@
 			</div>
 		</div>
 	</footer>
+	<script src="https://cdn.jsdelivr.net/bootstrap.native/1.0.4/bootstrap-native.js"></script>
 </body>
 </html>

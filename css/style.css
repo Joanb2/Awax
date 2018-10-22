@@ -9,12 +9,10 @@
 body {
   padding: 0;
   margin: 0;
-  backround-color: #wh;
+  backround-color: #fff;
 }
 
 .container-fluid {
-  width: 100%;
-  height: auto;
   padding: 0;
   margin: 0;
 }
@@ -34,6 +32,9 @@ header {
 }
 
 .hero nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   height: 100px;
   width: 100%;
   background-color: #000;
@@ -41,22 +42,22 @@ header {
   margin: 0;
 }
 
-.hero .logo {
-  display: inline;
-  margin: 25px 25px 25px 200px;
+.hero nav input, .hero nav label {
+  display: none;
 }
 
-.hero ul {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+.hero nav .logo {
+  margin-right: 30%;
+}
+
+.hero nav .menu_hide {
+  width: 60%;
   padding: 0;
   margin: 0;
   height: 100px;
-  width: 70%;
 }
 
-.hero li {
+.hero nav .menu_hide li {
   display: inline-block;
   color: #fff;
   line-height: 93px;
@@ -66,7 +67,7 @@ header {
   padding: 0 10px;
 }
 
-.hero li:hover {
+.hero nav .menu_hide li:hover {
   border-bottom: 5px solid #b88b58;
   cursor: pointer;
 }
@@ -117,7 +118,7 @@ header {
 }
 
 .about {
-  padding: 55px;
+  padding: 55px 15px;
   position: relative;
 }
 
@@ -154,11 +155,8 @@ header {
   color: #aeaeae;
 }
 
-.about .container {
-  padding: 0 0 50px 0;
-}
-
-.about .container p {
+.about p {
+  padding: 10px;
   margin-top: 8px;
   font-size: 14px;
   line-height: 25px;
@@ -166,7 +164,7 @@ header {
   font-weight: 500;
 }
 
-.about .container button {
+.about button {
   margin-top: 15px;
   display: block;
   margin: 0 auto;
@@ -181,7 +179,7 @@ header {
   border-radius: 25px;
 }
 
-.about .container img {
+.about img {
   width: 445px;
   height: 275px;
 }
@@ -213,11 +211,11 @@ header {
 
 .services .icon {
   text-align: center;
-  border-left: 2px solid #bebebe;
+  border-left: 1px solid #bebebe;
 }
 
 .services .icon:last-of-type {
-  border-right: 2px solid #bebebe;
+  border-right: 1px solid #bebebe;
 }
 
 .services .icon h4 {
@@ -227,13 +225,20 @@ header {
   margin-top: 20px;
 }
 
+.services .icon .modern {
+  height: 42px;
+  margin-top: 14px;
+}
+
 .services .icon p {
   color: #7e7e7e;
   font-size: 12px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .projects {
-  padding: 55px;
+  padding: 55px 0 50px 0;
   height: 950px;
   width: 100%;
 }
@@ -255,11 +260,15 @@ header {
   margin-bottom: 45px;
 }
 
-.projects ul {
+.projects .nav input, .projects .nav label {
+  display: none;
+}
+
+.projects .nav .menu {
   display: block;
   margin: 0 auto;
   background-color: #ededed;
-  width: 710px;
+  width: 700px;
   height: 58px;
   padding: 0;
   text-align: center;
@@ -267,7 +276,7 @@ header {
   border: 1px solid #cfcfcf;
 }
 
-.projects ul li {
+.projects .nav .menu li {
   display: inline-block;
   padding: 0 22px;
   font-size: 14px;
@@ -276,18 +285,18 @@ header {
   border-right: 1px solid #aeaeae;
 }
 
-.projects ul li:last-of-type {
+.projects .nav .menu li:last-of-type {
   border-right: none;
 }
 
-.projects ul li:hover {
+.projects .nav .menu li:hover {
   border-bottom: 3px solid #b88b58;
   cursor: pointer;
 }
 
 .projects .portfolio {
   margin: 0 auto;
-  width: 1080px;
+  width: 90%;
   padding-top: 23px;
 }
 
@@ -296,45 +305,51 @@ header {
   margin: 0;
 }
 
-.projects .portfolio img {
-  padding: 15px;
+.projects .portfolio .photo {
   position: relative;
-  z-index: -1;
+  width: 255px;
+  height: 165px;
+  margin: 20px auto;
 }
 
-.projects .portfolio .layer {
+.projects .portfolio .photo img {
+  z-index: -1;
+  width: 255px;
+  height: 165px;
+  display: block;
+}
+
+.projects .portfolio .photo .layer {
   opacity: 0;
   text-align: center;
   color: #fff;
   position: absolute;
   width: 255px;
   height: 165px;
-  left: 15px;
-  top: 15px;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.projects .portfolio .layer:hover {
+.projects .portfolio .photo .layer:hover {
   opacity: 1;
   transition: 1s;
   cursor: pointer;
 }
 
-.projects .portfolio .layer h4 {
+.projects .portfolio .photo .layer h4 {
   margin-top: 60px;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 400;
 }
 
-.projects .portfolio .layer p {
+.projects .portfolio .photo .layer p {
   font-size: 12px;
   font-weight: 300;
 }
 
 .projects button {
-  margin: 30px auto;
+  margin-top: 30px;
   display: block;
   margin: 0 auto;
   color: #fff;
@@ -349,13 +364,12 @@ header {
 }
 
 .team {
-  width: 100%;
+  padding: 55px 0;
   height: 700px;
+  width: 100%;
   background-image: url("../images/Bg_image.png");
   background-position: center;
   background-repeat: no-repeat;
-  margin-top: 55px;
-  padding: 55px;
   object-fit: cover;
 }
 
@@ -374,20 +388,32 @@ header {
   text-transform: uppercase;
   line-height: 30px;
   color: #aeaeae;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
-.team .person {
+.team .workers {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team .workers .person {
+  padding-top: 48px;
   background-color: #fff;
-  width: 350px;
-  height: 432px;
+  width: 320px;
+  height: 402px;
+  margin-right: 30px;
 }
 
-.team .person img {
-  margin: 48px 83px;
+.team .workers .person img {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 48px auto;
+  display: block;
 }
 
-.team .person h3 {
+.team .workers .person h3 {
   color: #000;
   font-size: 21px;
   text-transform: uppercase;
@@ -396,7 +422,7 @@ header {
   margin-bottom: 15px;
 }
 
-.team .person p {
+.team .workers .person p {
   color: #000;
   font-size: 14px;
   line-height: 24px;
@@ -404,30 +430,29 @@ header {
   text-align: center;
 }
 
-.team .person .socials {
-  margin-top: 30px;
+.team .workers .person .socials {
+  text-align: center;
 }
 
-.team .person .socials i {
+.team .workers .person .socials i {
   font-size: 14px;
-  width: 33px;
-  height: 33px;
+  width: 30px;
+  height: 30px;
   text-align: center;
   padding: 8px;
   border-radius: 50%;
   color: #fff;
   background-color: #bebebe;
-  margin-left: 11px;
 }
 
-.team .person .socials i:hover {
+.team .workers .person .socials i:hover {
   background-color: #b88b58;
   transition: .5s;
 }
 
 .team .dots {
   display: block;
-  margin: 53px auto 43px auto;
+  margin: 50px auto 0 auto;
 }
 
 .clients {
@@ -483,7 +508,7 @@ header {
 .clients .opinion {
   margin: 0 auto;
   text-align: center;
-  width: 728px;
+  width: 70%;
   color: #7e7e7e;
   font-size: 14px;
   font-weight: 300;
@@ -530,11 +555,12 @@ header {
 }
 
 .prices .offers .offer {
-  margin-top: 45px;
+  margin: 45px auto;
   background-color: #fff;
   width: 255px;
   height: 343px;
-  padding: 31px 65px 33px 68px;
+  text-align: center;
+  padding-top: 25px;
 }
 
 .prices .offers .offer h4 {
@@ -594,7 +620,7 @@ header {
   width: 100%;
   height: 757px;
   background-color: #fff;
-  padding: 55px;
+  padding: 55px 0;
 }
 
 .premium h2 {
@@ -614,27 +640,37 @@ header {
 }
 
 .premium .features {
-  margin: 36px auto 27px auto;
+  margin: 36px 0 27px 75px;
+  border-bottom: 1px solid #bebebe;
+  padding: 0 15px;
 }
 
-.premium .features h4 {
+.premium .features .wrapper img {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.premium .features .wrapper .feature {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.premium .features .wrapper .feature h4 {
   font-size: 21px;
   text-transform: uppercase;
   font-weight: 700;
   color: #242424;
   display: inline;
-  margin-left: 30px;
 }
 
-.premium .features p {
+.premium .features .wrapper .feature p {
   font-size: 14px;
   font-weight: 300;
   line-height: 25px;
-  margin-left: 68px;
   margin-bottom: 32px;
 }
 
-.premium .features p:first-of-type {
+.premium .features .wrapper .feature p:first-of-type {
   margin-bottom: 42px;
 }
 
@@ -655,7 +691,7 @@ header {
   height: 45px;
   border: none;
   border-radius: 25px;
-  margin: 40px auto 43px auto;
+  margin: 40px auto 0 auto;
 }
 
 .facts {
@@ -685,6 +721,7 @@ header {
 .facts .details {
   height: 230px;
   margin-top: 51px;
+  padding-bottom: 55px;
 }
 
 .facts .details .detail {
@@ -887,11 +924,7 @@ header {
 footer {
   height: 265px;
   background-color: #000;
-  padding: 33px;
-}
-
-footer .container {
-  width: 80%;
+  padding: 33px 0;
 }
 
 footer .social_links {
@@ -925,7 +958,7 @@ footer .text {
   color: #7e7e7e;
   font-weight: 300;
   line-height: 21px;
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
 footer .subscribe {
@@ -965,24 +998,176 @@ footer .subscribe button {
 }
 
 @media (min-width: 992px) and (max-width: 1190px) {
-  .hero .logo {
+  .hero .main_menu .logo {
+    margin-right: 0;
+  }
+  .hero .main_menu ul {
+    text-align: center;
+    width: 90%;
+  }
+  .hero .main_menu ul li {
+    line-height: 93px;
+    margin: 0 auto;
+  }
+  .about {
+    height: auto;
+  }
+  .about .video {
+    width: 400px;
+    height: 250px;
+  }
+  .services {
+    height: auto;
+  }
+  .projects {
+    height: auto;
+    padding: 55px 0;
+  }
+  .projects .portfolio {
+    width: 100%;
+  }
+  .projects .portfolio .layer {
+    left: 0;
+  }
+  .team {
+    height: auto;
+    padding-bottom: 45px;
+  }
+  .team .workers .person {
+    width: 300px;
+    height: 432px;
+  }
+  .team .workers .person img {
+    width: 183px;
+    height: 183px;
+    display: block;
+  }
+  .team .workers .person .socials {
+    margin-top: 50px;
+  }
+  .team .workers .person .socials i {
+    margin: 0 auto;
+  }
+  .clients {
+    height: auto;
+  }
+  .prices {
+    height: auto;
+    padding: 55px 5px;
+  }
+  .prices .offers .offer {
+    width: 240px;
+    padding-bottom: 15px;
+  }
+  .premium {
+    height: auto;
+  }
+  .premium .features {
+    margin-left: 30px;
+  }
+  .premium .features .wrapper {
+    margin-left: 10%;
+    padding-bottom: 0;
+  }
+  .premium .features .wrapper img {
+    display: inline;
+  }
+  .premium .features .wrapper .feature {
+    display: inline;
+  }
+  .premium .features .wrapper .feature h4 {
     margin-left: 0;
   }
-  .hero nav li {
-    line-height: 15px;
+  .premium .features .wrapper .feature p {
+    margin-left: 60px;
+    margin-bottom: 0;
+  }
+  .facts {
+    height: auto;
+  }
+  .facts .details {
+    height: auto;
+    padding-bottom: 55px;
+  }
+  .contact {
+    height: auto;
+  }
+  footer {
+    height: auto;
+  }
+  footer .subscribe {
+    margin-left: 0;
+    width: 325px;
+  }
+}
+
+@media (min-width: 776px) and (max-width: 991px) {
+  .hero nav .logo {
+    margin-right: 5%;
+  }
+  .hero nav .menu_hide {
+    width: 85%;
+  }
+  .hero nav .menu_hide li {
+    font-size: 12px;
+    line-height: 94px;
     text-align: center;
   }
   .about {
     height: auto;
   }
+  .about img {
+    display: block;
+    margin: 25px auto 0 auto;
+  }
   .services {
     height: auto;
   }
+  .services .icon {
+    border: 0;
+    padding: 15px;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+  }
+  .services .icon:first-of-type {
+    border-left: 0;
+  }
+  .services .icon:last-of-type {
+    border-right: 0;
+    border-bottom: 0;
+  }
+  .services .icon:nth-of-type(3) {
+    border-bottom: 0;
+    border-left: 0;
+  }
   .projects {
     height: auto;
+    padding: 55px 0;
+  }
+  .projects .portfolio {
+    margin: 0 auto;
   }
   .team {
-    height: auto;
+    padding: 55px 0;
+  }
+  .team .workers .person {
+    width: 235px;
+    height: 380px;
+    padding: 30px 0;
+  }
+  .team .workers .person img {
+    display: block;
+    margin: 0 auto 30px auto;
+  }
+  .team .workers .person .socials {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .team .workers .person .socials i {
+    margin: 0;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
   }
   .clients {
     height: auto;
@@ -990,35 +1175,179 @@ footer .subscribe button {
   .prices {
     height: auto;
   }
+  .prices .offers .offer {
+    margin: 30px auto;
+  }
   .premium {
     height: auto;
+  }
+  .premium .packages {
+    display: block;
+    margin: 0 auto;
   }
   .facts {
     height: auto;
   }
   .facts .details {
     height: auto;
+    padding-bottom: 55px;
+  }
+  .facts .details .detail p {
+    left: 30px;
   }
   .contact {
     height: auto;
   }
   footer {
     height: auto;
+  }
+  footer .subscribe {
+    margin: 15px auto;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 775px) {
+  .hero {
+    height: auto;
+  }
+  .hero .logo {
+    margin: 20px 25px;
+    display: inline-block;
+  }
+  .hero nav {
+    min-height: 90px;
+    height: auto;
+    display: block;
+    background-color: #000;
+  }
+  .hero nav label {
+    display: inline-block;
+    float: right;
+    line-height: 88px;
+    margin-right: 25px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #b88b58;
+    cursor: pointer;
+  }
+  .hero nav label:hover {
+    color: #aeaeae;
+  }
+  .hero nav .menu_hide {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+  .hero nav .menu_hide li {
+    font-size: 18px;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    border-top: 1px solid #aeaeae;
+  }
+  .hero nav .menu_hide li:hover {
+    color: #b88b58;
+    border-bottom: 0;
+  }
+  .hero nav .menu_hide li:first-of-type {
+    border-top: none;
+  }
+  .hero nav #toggle_nav:checked + .menu_hide {
+    transition: 1s;
+    display: block;
+  }
+  .hero .slogan {
+    display: block;
+    margin-top: 15%;
+  }
+  .hero .slogan h1 {
+    font-size: 40px;
+  }
   .about {
     height: auto;
+  }
+  .about img.video {
+    display: block;
+    width: 300px;
+    height: 220px;
+    margin: 25px auto 0 auto;
   }
   .services {
     height: auto;
   }
+  .services .icon {
+    margin: 20px 0;
+    padding-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid #bebebe;
+  }
+  .services .icon:last-of-type {
+    border-right: none;
+    border-bottom: none;
+  }
   .projects {
     height: auto;
   }
-  .team {
+  .projects .nav label {
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .projects .nav #toggle:checked + .menu {
+    transition: 1s;
+    display: block;
+  }
+  .projects .nav .menu {
+    width: 100%;
+    background-color: inherit;
+    text-align: center;
+    border: none;
     height: auto;
+    display: none;
+  }
+  .projects .nav .menu li {
+    display: block;
+    border: none;
+    border-bottom: 1px solid #aeaeae;
+  }
+  .projects .nav .menu:hover {
+    border-bottom: none;
+  }
+  .projects .nav .menu a {
+    display: inline;
+    color: #000;
+    text-decoration: none;
+  }
+  .projects .nav .menu a:hover {
+    color: #b88b58;
+  }
+  .projects .portfolio {
+    width: 100%;
+  }
+  .projects .portfolio img {
+    display: block;
+    margin: 0 auto 5px auto;
+    width: 300px;
+    height: 200px;
+  }
+  .team {
+    background-image: none;
+    background-color: #EDEDED;
+    height: auto;
+    padding: 55px 0;
+  }
+  .team h2 {
+    color: #000;
+  }
+  .team .container, .team .row {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+  }
+  .team .workers .person {
+    margin: 15px auto 30px auto;
   }
   .clients {
     height: auto;
@@ -1026,56 +1355,114 @@ footer .subscribe button {
   .prices {
     height: auto;
   }
+  .prices .offer {
+    display: block;
+    margin: 20px auto;
+  }
   .premium {
     height: auto;
+  }
+  .premium .packages {
+    display: block;
+    width: 300px;
+    height: 250px;
+    margin: 0 auto;
+  }
+  .premium .features {
+    margin: 0;
+  }
+  .premium .features .wrapper img {
+    display: inline;
+  }
+  .premium .features .wrapper .feature {
+    max-width: 280px;
+    display: inline;
+    margin-left: 5px;
+  }
+  .premium .features .wrapper .feature p {
+    margin-left: 45px;
+  }
+  .premium .dots {
+    margin-top: 20px;
   }
   .facts {
     height: auto;
   }
   .facts .details {
     height: auto;
+    padding-bottom: 30px;
+  }
+  .facts .details .detail {
+    max-width: 60%;
+  }
+  .facts .details .detail p {
+    left: 15px;
+  }
+  .facts .socials {
+    height: auto;
+  }
+  .facts .socials p {
+    margin-right: 20px;
+    line-height: 35px;
+  }
+  .facts .socials i {
+    margin: 5px;
   }
   .contact {
     height: auto;
   }
-  footer {
-    height: auto;
+  .contact h3 {
+    width: 90%;
+    margin: 10px auto 0 auto;
   }
-}
-
-@media (max-width: 767px) {
-  .about {
-    height: auto;
+  .contact form {
+    width: auto;
+    margin-top: 30px;
+    padding-left: 15px;
+    text-align: center;
   }
-  .services {
-    height: auto;
+  .contact form input.topic {
+    width: 300px;
   }
-  .projects {
-    height: auto;
+  .contact .map {
+    margin: 0;
   }
-  .team {
-    height: auto;
+  .contact .map .info {
+    padding: 20px;
+    width: 360px;
+    height: 285px;
+    left: 0;
   }
-  .clients {
-    height: auto;
-  }
-  .prices {
-    height: auto;
-  }
-  .premium {
-    height: auto;
-  }
-  .facts {
-    height: auto;
-  }
-  .facts .details {
-    height: auto;
-  }
-  .contact {
-    height: auto;
+  .contact .map .info p {
+    margin-bottom: 10px;
   }
   footer {
     height: auto;
+  }
+  footer .social_links {
+    text-align: center;
+    height: 60px;
+  }
+  footer .social_links i {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px;
+  }
+  footer .social_links .copyright {
+    display: inline;
+    margin-left: 5px;
+  }
+  footer .text {
+    padding: 15px;
+  }
+  footer .subscribe {
+    margin: 20px auto 0 auto;
+    width: 300px;
+    height: 198px;
+  }
+  footer .subscribe input {
+    text-align: center;
   }
 }
 
