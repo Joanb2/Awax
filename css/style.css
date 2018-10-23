@@ -9,7 +9,7 @@
 body {
   padding: 0;
   margin: 0;
-  backround-color: #fff;
+  backround-color: #FFF;
 }
 
 .container-fluid {
@@ -59,7 +59,7 @@ header {
 
 .hero nav .menu_hide li {
   display: inline-block;
-  color: #fff;
+  color: #FFF;
   line-height: 93px;
   font-size: 14px;
   font-weight: 700;
@@ -80,7 +80,7 @@ header {
 .hero .slogan h1 {
   text-align: center;
   text-transform: uppercase;
-  color: #fff;
+  color: #FFF;
   font-size: 72px;
   font-weight: 700;
   line-height: 69px;
@@ -90,7 +90,7 @@ header {
   padding: 29px 0 30px 0;
   text-align: center;
   height: 18px;
-  color: #fff;
+  color: #FFF;
   font-size: 24px;
   font-weight: 400;
   line-height: 18px;
@@ -101,7 +101,7 @@ header {
   margin: 67px auto 0 auto;
   display: block;
   margin: 0 auto;
-  color: #fff;
+  color: #FFF;
   background-color: #b88b58;
   font-size: 12px;
   text-transform: uppercase;
@@ -109,7 +109,7 @@ header {
   width: 194px;
   height: 45px;
   border: none;
-  border-radius: 25px;
+  border-radius: 20px;
 }
 
 .hero .dots {
@@ -130,10 +130,9 @@ header {
   right: 80px;
   font-size: 35px;
   text-align: center;
-  padding: 5px;
-  color: #fff;
+  padding: 15px;
+  color: #FFF;
   background-color: #b88b58;
-  padding: 10px;
   border-radius: 50%;
 }
 
@@ -168,7 +167,7 @@ header {
   margin-top: 15px;
   display: block;
   margin: 0 auto;
-  color: #fff;
+  color: #FFF;
   background-color: #b88b58;
   font-size: 12px;
   text-transform: uppercase;
@@ -176,7 +175,7 @@ header {
   width: 194px;
   height: 45px;
   border: none;
-  border-radius: 25px;
+  border-radius: 20px;
 }
 
 .about img {
@@ -196,7 +195,7 @@ header {
   font-size: 30px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #fff;
+  color: #FFF;
 }
 
 .services h3 {
@@ -219,7 +218,7 @@ header {
 }
 
 .services .icon h4 {
-  color: #fff;
+  color: #FFF;
   text-transform: uppercase;
   font-size: 18px;
   margin-top: 20px;
@@ -322,7 +321,7 @@ header {
 .projects .portfolio .photo .layer {
   opacity: 0;
   text-align: center;
-  color: #fff;
+  color: #FFF;
   position: absolute;
   width: 255px;
   height: 165px;
@@ -352,7 +351,7 @@ header {
   margin-top: 30px;
   display: block;
   margin: 0 auto;
-  color: #fff;
+  color: #FFF;
   background-color: #b88b58;
   font-size: 12px;
   text-transform: uppercase;
@@ -360,7 +359,7 @@ header {
   width: 194px;
   height: 45px;
   border: none;
-  border-radius: 25px;
+  border-radius: 20px;
 }
 
 .team {
@@ -378,7 +377,7 @@ header {
   font-size: 30px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #fff;
+  color: #FFF;
 }
 
 .team h3 {
@@ -400,7 +399,7 @@ header {
 
 .team .workers .person {
   padding-top: 48px;
-  background-color: #fff;
+  background-color: #FFF;
   width: 320px;
   height: 402px;
   margin-right: 30px;
@@ -441,7 +440,7 @@ header {
   text-align: center;
   padding: 8px;
   border-radius: 50%;
-  color: #fff;
+  color: #FFF;
   background-color: #bebebe;
 }
 
@@ -521,7 +520,7 @@ header {
 }
 
 .clients .logos {
-  background-color: #fff;
+  background-color: #FFF;
   width: 100%;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
@@ -533,7 +532,7 @@ header {
 
 .prices {
   padding: 55px;
-  height: 560px;
+  height: 575px;
   background-color: #ededed;
 }
 
@@ -556,7 +555,7 @@ header {
 
 .prices .offers .offer {
   margin: 45px auto;
-  background-color: #fff;
+  background-color: #FFF;
   width: 255px;
   height: 343px;
   text-align: center;
@@ -606,7 +605,7 @@ header {
   font-weight: 700;
   text-transform: uppercase;
   background-color: #373737;
-  color: #fff;
+  color: #FFF;
   line-height: 18px;
   border-radius: 25px;
   border: none;
@@ -614,13 +613,15 @@ header {
 
 .prices .offers .offer button:hover {
   background-color: #b88b58;
+  transition: .5s;
+  cursor: pointer;
 }
 
 .premium {
   width: 100%;
   height: 757px;
-  background-color: #fff;
-  padding: 55px 0;
+  background-color: #FFF;
+  padding: 55px;
 }
 
 .premium h2 {
@@ -640,9 +641,18 @@ header {
 }
 
 .premium .features {
-  margin: 36px 0 27px 75px;
+  margin: 36px auto 27px auto;
+  width: 80%;
   border-bottom: 1px solid #bebebe;
   padding: 0 15px;
+}
+
+.premium .features .packages {
+  margin-left: 20px;
+}
+
+.premium .features .wrapper {
+  margin-left: 50px;
 }
 
 .premium .features .wrapper img {
@@ -682,7 +692,7 @@ header {
 .premium button {
   display: block;
   margin: 0 auto;
-  color: #fff;
+  color: #FFF;
   background-color: #b88b58;
   font-size: 12px;
   text-transform: uppercase;
@@ -690,7 +700,7 @@ header {
   width: 194px;
   height: 45px;
   border: none;
-  border-radius: 25px;
+  border-radius: 20px;
   margin: 40px auto 0 auto;
 }
 
@@ -741,7 +751,7 @@ header {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #fff;
+  color: #FFF;
   margin-bottom: 22px;
 }
 
@@ -761,16 +771,21 @@ header {
   padding: 21px;
   font-size: 10px;
   font-weight: 700;
-  background-color: #fff;
+  background-color: #FFF;
   color: #aeaeae;
+  border-bottom: 1px solid #a4a4a4;
 }
 
-.facts .socials img {
+.facts .socials .share {
+  display: inline;
+}
+
+.facts .socials .share img {
   display: inline;
   margin-right: 15px;
 }
 
-.facts .socials p {
+.facts .socials .share p {
   display: inline;
   font-size: 14px;
   text-transform: uppercase;
@@ -781,7 +796,7 @@ header {
   width: 33px;
   height: 33px;
   border-radius: 50%;
-  color: #fff;
+  color: #FFF;
   margin: 0 5px 0 36px;
   padding: 8px;
   font-size: 15px;
@@ -790,6 +805,7 @@ header {
 
 .facts .socials i.fa-twitter {
   background-color: #34c5f0;
+  margin-left: 0;
 }
 
 .facts .socials i.fa-linkedin-in {
@@ -841,11 +857,8 @@ header {
   margin: 0;
 }
 
-.contact form .col-lg-5 {
-  margin-right: 45px;
-}
-
-.contact form input {
+.contact form .form-group .personal input, .contact form .form-group .topic input {
+  width: 100%;
   background-color: inherit;
   font-size: 13px;
   font-weight: 300;
@@ -859,18 +872,21 @@ header {
   margin-bottom: 46px;
 }
 
-.contact form input.personal {
+.contact form .form-group .personal {
+  height: auto;
   width: 255px;
+  margin-right: 50px;
 }
 
-.contact form input.topic {
-  width: 540px;
+.contact form .form-group .topic {
+  height: auto;
+  width: 550px;
 }
 
 .contact button {
   display: block;
   margin: 0 auto;
-  color: #fff;
+  color: #FFF;
   background-color: #b88b58;
   font-size: 12px;
   text-transform: uppercase;
@@ -878,7 +894,7 @@ header {
   width: 194px;
   height: 45px;
   border: none;
-  border-radius: 25px;
+  border-radius: 20px;
   margin-bottom: 76px;
 }
 
@@ -891,7 +907,7 @@ header {
 }
 
 .contact .map .info {
-  background-color: #fff;
+  background-color: #FFF;
   width: 540px;
   height: 343px;
   padding: 67px 122px 76px 40px;
@@ -912,7 +928,7 @@ header {
   width: 35px;
   height: 35px;
   background-color: #aeaeae;
-  color: #fff;
+  color: #FFF;
   border-radius: 50%;
   padding: 8px;
   font-size: 18px;
@@ -935,7 +951,7 @@ footer .social_links i {
   width: 33px;
   height: 33px;
   background-color: #373737;
-  color: #fff;
+  color: #FFF;
   border-radius: 50%;
   text-align: center;
   padding: 8px;
@@ -948,7 +964,7 @@ footer .social_links i:hover {
 footer .social_links .copyright {
   font-size: 14px;
   text-transform: uppercase;
-  color: #fff;
+  color: #FFF;
   height: 11px;
   margin-top: 140px;
 }
@@ -956,7 +972,7 @@ footer .social_links .copyright {
 footer .text {
   font-size: 12px;
   color: #7e7e7e;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 21px;
   padding: 0 20px;
 }
@@ -985,7 +1001,7 @@ footer .subscribe input {
 footer .subscribe button {
   display: block;
   margin: 0 auto;
-  color: #fff;
+  color: #FFF;
   background-color: #b88b58;
   font-size: 12px;
   text-transform: uppercase;
@@ -993,7 +1009,7 @@ footer .subscribe button {
   width: 194px;
   height: 45px;
   border: none;
-  border-radius: 25px;
+  border-radius: 20px;
   margin-top: 28px;
 }
 
@@ -1001,23 +1017,16 @@ footer .subscribe button {
   .hero .main_menu .logo {
     margin-right: 0;
   }
-  .hero .main_menu ul {
+  .hero .main_menu .menu_hide {
     text-align: center;
     width: 90%;
   }
-  .hero .main_menu ul li {
+  .hero .main_menu .menu_hide li {
     line-height: 93px;
-    margin: 0 auto;
-  }
-  .about {
-    height: auto;
   }
   .about .video {
     width: 400px;
     height: 250px;
-  }
-  .services {
-    height: auto;
   }
   .projects {
     height: auto;
@@ -1025,8 +1034,12 @@ footer .subscribe button {
   }
   .projects .portfolio {
     width: 100%;
+    margin-bottom: 30px;
   }
-  .projects .portfolio .layer {
+  .projects .portfolio .photo {
+    margin-bottom: 0;
+  }
+  .projects .portfolio .photo .layer {
     left: 0;
   }
   .team {
@@ -1048,11 +1061,7 @@ footer .subscribe button {
   .team .workers .person .socials i {
     margin: 0 auto;
   }
-  .clients {
-    height: auto;
-  }
   .prices {
-    height: auto;
     padding: 55px 5px;
   }
   .prices .offers .offer {
@@ -1061,9 +1070,10 @@ footer .subscribe button {
   }
   .premium {
     height: auto;
+    padding: 55px 25px;
   }
   .premium .features {
-    margin-left: 30px;
+    width: 95%;
   }
   .premium .features .wrapper {
     margin-left: 10%;
@@ -1089,9 +1099,6 @@ footer .subscribe button {
     height: auto;
     padding-bottom: 55px;
   }
-  .contact {
-    height: auto;
-  }
   footer {
     height: auto;
   }
@@ -1101,17 +1108,19 @@ footer .subscribe button {
   }
 }
 
-@media (min-width: 776px) and (max-width: 991px) {
-  .hero nav .logo {
-    margin-right: 5%;
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero .main_menu .logo {
+    margin-left: 20px;
+    margin-right: 0;
   }
-  .hero nav .menu_hide {
-    width: 85%;
+  .hero .main_menu .menu_hide {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
   }
-  .hero nav .menu_hide li {
+  .hero .main_menu .menu_hide li {
     font-size: 12px;
     line-height: 94px;
-    text-align: center;
   }
   .about {
     height: auto;
@@ -1126,8 +1135,8 @@ footer .subscribe button {
   .services .icon {
     border: 0;
     padding: 15px;
-    border-bottom: 1px solid #fff;
-    border-left: 1px solid #fff;
+    border-bottom: 1px solid #FFF;
+    border-left: 1px solid #FFF;
   }
   .services .icon:first-of-type {
     border-left: 0;
@@ -1181,7 +1190,12 @@ footer .subscribe button {
   .premium {
     height: auto;
   }
-  .premium .packages {
+  .premium .features {
+    width: 90%;
+    display: block;
+    margin: 36px auto;
+  }
+  .premium .features .packages {
     display: block;
     margin: 0 auto;
   }
@@ -1206,7 +1220,7 @@ footer .subscribe button {
   }
 }
 
-@media (max-width: 775px) {
+@media (max-width: 767px) {
   .hero {
     height: auto;
   }
@@ -1214,13 +1228,13 @@ footer .subscribe button {
     margin: 20px 25px;
     display: inline-block;
   }
-  .hero nav {
-    min-height: 90px;
+  .hero .main_menu {
     height: auto;
     display: block;
     background-color: #000;
+    transition: max-height .25s ease-in-out;
   }
-  .hero nav label {
+  .hero .main_menu label {
     display: inline-block;
     float: right;
     line-height: 88px;
@@ -1230,30 +1244,30 @@ footer .subscribe button {
     color: #b88b58;
     cursor: pointer;
   }
-  .hero nav label:hover {
+  .hero .main_menu label:hover {
     color: #aeaeae;
   }
-  .hero nav .menu_hide {
+  .hero .main_menu .menu_hide {
     display: none;
     width: 100%;
     height: auto;
   }
-  .hero nav .menu_hide li {
+  .hero .main_menu .menu_hide li {
     font-size: 18px;
     display: block;
     line-height: 50px;
     text-align: center;
     border-top: 1px solid #aeaeae;
   }
-  .hero nav .menu_hide li:hover {
+  .hero .main_menu .menu_hide li:hover {
     color: #b88b58;
     border-bottom: 0;
   }
-  .hero nav .menu_hide li:first-of-type {
+  .hero .main_menu .menu_hide li:first-of-type {
     border-top: none;
+    margin-left: 7%;
   }
-  .hero nav #toggle_nav:checked + .menu_hide {
-    transition: 1s;
+  .hero .main_menu #toggle_nav:checked + .menu_hide {
     display: block;
   }
   .hero .slogan {
@@ -1261,10 +1275,18 @@ footer .subscribe button {
     margin-top: 15%;
   }
   .hero .slogan h1 {
-    font-size: 40px;
+    font-size: 35px;
   }
   .about {
     height: auto;
+  }
+  .about .fa-phone {
+    width: 55px;
+    height: 55px;
+    font-size: 30px;
+    padding: 12px;
+    top: -30px;
+    right: 30px;
   }
   .about img.video {
     display: block;
@@ -1295,8 +1317,10 @@ footer .subscribe button {
     font-size: 25px;
     font-weight: 700;
   }
+  .projects .nav label:hover {
+    color: #b88b58;
+  }
   .projects .nav #toggle:checked + .menu {
-    transition: 1s;
     display: block;
   }
   .projects .nav .menu {
@@ -1312,16 +1336,8 @@ footer .subscribe button {
     border: none;
     border-bottom: 1px solid #aeaeae;
   }
-  .projects .nav .menu:hover {
-    border-bottom: none;
-  }
-  .projects .nav .menu a {
-    display: inline;
-    color: #000;
-    text-decoration: none;
-  }
-  .projects .nav .menu a:hover {
-    color: #b88b58;
+  .projects .nav .menu li:hover {
+    border-bottom: 1px solid #b88b58;
   }
   .projects .portfolio {
     width: 100%;
@@ -1360,16 +1376,21 @@ footer .subscribe button {
     margin: 20px auto;
   }
   .premium {
+    padding: 55px 15px;
     height: auto;
   }
-  .premium .packages {
+  .premium .features {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .premium .features .packages {
     display: block;
     width: 300px;
     height: 250px;
-    margin: 0 auto;
+    margin: 0 auto 15px auto;
   }
-  .premium .features {
-    margin: 0;
+  .premium .features .wrapper {
+    margin: 0 auto;
   }
   .premium .features .wrapper img {
     display: inline;
@@ -1401,7 +1422,14 @@ footer .subscribe button {
   .facts .socials {
     height: auto;
   }
-  .facts .socials p {
+  .facts .socials .share {
+    display: block;
+  }
+  .facts .socials .share img {
+    display: inline-block;
+  }
+  .facts .socials .share p {
+    display: inline-block;
     margin-right: 20px;
     line-height: 35px;
   }
@@ -1418,10 +1446,10 @@ footer .subscribe button {
   .contact form {
     width: auto;
     margin-top: 30px;
-    padding-left: 15px;
+    padding-left: 5px;
     text-align: center;
   }
-  .contact form input.topic {
+  .contact form .form-group .topic {
     width: 300px;
   }
   .contact .map {
@@ -1429,8 +1457,8 @@ footer .subscribe button {
   }
   .contact .map .info {
     padding: 20px;
-    width: 360px;
-    height: 285px;
+    width: 100%;
+    height: auto;
     left: 0;
   }
   .contact .map .info p {
