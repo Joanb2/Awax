@@ -43,10 +43,6 @@ $small_h: #aeaeae;
 	@include reset_default;
 }
 
-/** {
-	border: 1px solid #bbb;
-}*/
-
 body {
 	@include reset_default;
 	backround-color: $wh;
